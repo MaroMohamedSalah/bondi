@@ -1,0 +1,213 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start navbar  */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .container .collapse ul li a{
+    color: var(--section-color);
+    font-weight: 500;
+}
+.navbar .container .collapse ul li .active,
+.navbar .container .collapse ul li a:hover,
+.navbar .container .collapse ul li a:focus{
+    color: var(--green-color);
+}
+.navbar .container .search{
+    position: relative;
+    color: var(--green-color);
+    margin: 0px 18px;
+    cursor: pointer;
+}
+.navbar .container .search::after{
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: var(--green-color);
+}
+.navbar-toggler{
+    color: var(--section-color);
+    font-size: 25px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler:focus[aria-expanded="true"]{
+    border-color: var(--green-color) !important;
+}
+.main-btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover,
+.main-btn:focus{
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    color: var(--yellow-color);
+}
+/* End navbar  */
+/* Start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* End landing */
+/* Start features */
+.features{
+    min-height: calc(100vh - 72px);
+}
+.main-title::after{
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    font-size: 4rem;
+    color: var(--green-color);
+}
+/* End features */
+/* Start our-work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+.our-work ul a:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .row .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.our-work .row .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background: #33d1ccd6;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .row .box:hover::before{
+    transform: translateX(0);
+}
+/* End our-work */
+/* Start about us  */
+.about .description{
+    max-width: 500px;
+}
+/* End about us  */
+/* Start team  */
+.team{
+    background-color: var(--section-color);
+}
+.sTitle h2{
+    color: var(--yellow-color);
+}
+.team .row .box h4{
+    background-color: var(--green-color);
+}
+/* End team  */
+/* Start project */
+.project{
+    background-color: var(--dark-color);
+}
+/* End project */
+/* Start Email */
+.email{
+    background-color: var(--yellow-color);
+}
+.email input[type = "text"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--section-color);
+}
+.email input[type = "text"]::placeholder{
+    color: var(--section-color);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.email input[type = "text"]:focus::placeholder{
+    opacity: 0;
+}
+.email input[type = "submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* End Email */
+/* Start footer  */
+footer{
+    background-color: var(--dark-color);
+}
+.copyRight div span{
+    color: var(--yellow-color);
+}
+.copyRight span{
+    color: var(--green-color);
+}
+.social a{
+    font-size: 32px;
+    padding: 0px 10px;
+    color: var(--section-color);
+    transition: all 0.5s ease-in-out;
+}
+.social a:nth-of-type(1):hover{
+    color: #4267B2;
+}
+.social a:nth-of-type(2):hover{
+    color: #E1306C;
+}
+.social a:nth-of-type(3):hover{
+    color: #333;
+}
+.social a:nth-of-type(4):hover{
+    color: #0077B5;
+}
+/* End footer  */
