@@ -1,2 +1,5 @@
 # bondi
-bootstrap practice 
+* just a simple project to practice bootstrap
+
+## Project link
+[Here](https://maromohamedsalah.github.io/bondi/)
